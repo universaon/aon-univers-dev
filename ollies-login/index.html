@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>
+  Ollies Benefit Portal
+</title>
+    
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="../app_themes/blankcanvas/ollies/stylesheets/bootstrap.min.css" rel="stylesheet">
+<link href="../app_themes/blankcanvas/ollies/stylesheets/style.css" rel="stylesheet">
+<!-- Color Stylesheet - red-->
+<link href="../app_themes/blankcanvas/ollies/stylesheets/red.css" rel="stylesheet"> 
+
+	
+	
+	
+
+<!-- Javascript files -->
+
+		<script src="../app_themes/blankcanvas/ollies/js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="../app_themes/blankcanvas/ollies/js/bootstrap.min.js"></script>
+	
+		<!-- Respond JS for IE8 -->
+		<script src="../app_themes/blankcanvas/ollies/js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="../app_themes/blankcanvas/ollies/js/html5shiv.js"></script>
+		
+
+
+
+</head>
+    <body>
+        
+
+            <h1 class="Heading"></h1>
+            <p>
+<style>.row .logo{text-align:center;
+     display:block;
+     margin-left:auto;
+     margin-right:auto;}
+
+  header{display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+  #submit-btn{ 
+    width:50%; 
+    text-align:center;
+    margin-top:10px;
+    background-color:yellow;
+    font-family:"PT Sans", Arial, Helvetica, sans-serif;
+    
+    }
+  
+  .logreg-page{text-align:center;font-family:"PT Sans", Arial, Helvetica, sans-serif;}
+</style>
+
+<header>
+   <div class="container">
+      <div class="row">
+            <!-- Logo and site link -->
+            <div class="logo">
+               <img src="../app_themes/blankcanvas/ollies/images/ollies-yellow.png" alt="Logo-Home" height="" width="" img="responsive">
+            </div>
+         
+        
+      </div>
+   </div>
+</header>
+
+<!-- Header ends -->
+
+		<!-- Navigation Starts -->
+		<!-- Note down the syntax before editing. It is the default twitter bootstrap navigation -->
+		
+  
+
+<!-- Content strats -->
+
+<div class="content">
+   <div class="container2">
+      <div class="row">
+         <div class="col-md-12">
+            
+            <!-- Login starts -->
+            
+            <div class="logreg">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="logreg-page">
+                        <h3>Sign In to <span class="color">Benefits Panel</span></h3>                        
+                        <hr />
+									<legend> Ollies Bargain Outlet </legend>
+								
+									<label for="Password">Password</label>
+									<input id="exampleInputPassword1" class="form-control" type="password" name="password" autocomplete="off">
+                                    <input type="button" value="Submit" id="submit-btn" class="btn btn-default">
+         </div>
+      </div>
+   </div>
+</div>
+ <script>
+
+
+//Password Emulator Logic
+
+$("#submit-btn").click(function() {
+  var pWord = $("#exampleInputPassword1").val();
+  if (pWord != "bargain") {
+    
+    alert("You entered an incorrect password, please try again.");
+  }
+  else {
+    
+    window.location="http://www.benefitsquest.com/ollies";
+    sessionStorage.setItem('bargain', 'pw');
+    localStorage.setItem('bargain','pw');
+     
+    
+    
+  }
+  
+});
+   
+// all jQuery events are executed within the document ready function
+   //The following code validates the above function on "ENTER" clicks
+$(document).ready(function() {
+
+   $("input").bind("keydown", function(event) {
+      // track enter key
+      var keycode = (event.keyCode ? event.keyCode : (event.which ? event.which : event.charCode));
+      if (keycode == 13) { // keycode for enter key
+         // force the 'Enter Key' to implicitly click the Update button
+         document.getElementById('submit-btn').click();
+         return false;
+      } else  {
+         return true;
+      }
+   }); // end of function
+
+}); // end of document ready   
+           </script>
+   
+
+        
+    </body>
+</html>

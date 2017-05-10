@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>State of Maine E-News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../../app_themes/blankcanvas/maineenews/stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+    <link href="../../app_themes/blankcanvas/maineenews/stylesheets/jquery.tocify.css" rel="stylesheet">
+    <link href="../../app_themes/blankcanvas/maineenews/stylesheets/prettify.css" type="text/css" rel="stylesheet" />
+    
+    <!-- Favicon images-->
+    
+      <link rel="apple-touch-icon" sizes="57x57" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../../app_themes/blankcanvas/maineenews/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../app_themes/blankcanvas/maineenews/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../../app_themes/blankcanvas/maineenews/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../app_themes/blankcanvas/maineenews/images/favicon-16x16.png">
+<link rel="manifest" href="../../app_themes/blankcanvas/maineenews/images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/app_themes/blankcanvas/maineenews/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+      <script src="../../app_themes/blankcanvas/maineenews/js/jquery-1.8.3.min.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/jquery-ui-1.9.1.custom.min.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/bootstrap.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/jquery.tocify.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/prettify.js"></script>
+  
+     
+
+  
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10627922-49', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <title>
+	Maine E-News
+</title></head>
+    <body>
+     
+<style>
+
+
+.hidden{display:none;}
+.hero-unit p{color:#eeeeee;}
+.hero-unit h1, h3{color:#eeeeee;}
+
+.hero-unit {
+
+  background-color: #6DA0A9;
+
+
+
+}
+/*white fruit text*/
+.white{ 
+color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,  
+    1px 1px 0 #000; 
+}
+
+      .activelink{
+     color:#005580;
+     text-decoration:unerline;
+   }
+
+
+   .divider {
+  height: 1px;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+
+
+
+h1, h2, h3, h4, h5, p, li, ol , span{
+
+
+    font-family: 'Raleway', sans-serif;
+
+
+
+}
+
+
+
+
+    body {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .headerDoc {
+      color: #005580;
+    }
+
+@media (max-width: 767px) {
+
+
+
+
+  .logo
+  {
+
+
+  }
+    #toc  {
+        position: relative;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+    </style>
+  
+
+
+
+
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div id="toc">
+          <img src="../../app_themes/blankcanvas/maineenews/images/mainelogo.png" class="img-responsive logo">
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1><center>State of Maine</center></h1>
+            <h3>
+              <center>Your Health &amp; Wellness Newletter<br><P>
+                
+                 Summer Edition 2</P></center>
+            </h3>
+           
+            
+            <br />
+            
+            <br />
+            <center><p>Brought to you by the State of Maine's Division of Employee Health &amp; Benefits
+            </p></center>
+          <center>  <p>
+              NewsLetter Archive
+            </p></center>
+           <!--Archives Edition-->
+            <span class="divider"></span>
+            
+           <center> <h4>
+              <A href="/maine-e-news/index.html">Winter Edition</A> |<A href="/maine-e-news/fall/index.html">Fall Edition</A> | <A class="activelink" href="/maine-e-news/summer/index.html">Summer Edition</A> <span>|</span>  <A href="/maine-e-news/june/index.html">June Edition</A> 
+            </h4></center>
+            
+          </div>
+
+              <h2><center>Keep Your Heart Healthy</center></h2>
+              <br />
+              <div class="well">
+
+            <center>  <img src="../../app_themes/blankcanvas/maineenews/images/heartcover.jpg" class="img-responsive" style=max-height:400px;></center>
+              <br> <br><br>
+
+              
+                
+                <p>
+                 <b>WHAT IS CARDIOVASCULAR DISEASE?</b><br><br>
+Cardiovascular disease, such as heart
+disease, is the leading cause of death
+for men and women in the United
+States. To understand heart disease,
+we need to understand how our heart
+works. Our heart needs enough blood
+supply to provide oxygen to our muscles
+so they can contract and pump. The
+heart delivers blood to the rest of our
+body through our coronary arteries.
+When arteries narrow, it puts stress
+on the heart muscle, making it unable
+to perform at its full potential, causing
+chest pain and shortness of breath.<br><br>
+
+There are many different types of heart
+disease although, the most common
+heart disease in the United States is
+coronary heart disease (CHD), which
+can lead to a heart attack. Once the
+coronary artery becomes completely
+blocked, blood supply to the heart is
+stopped and causes a portion of the
+heart muscle to die. When this happens,
+it causes a person to have a heart attack
+or myocardial infarction.<br><br>
+
+                  <b>WHAT CAUSES CARDIOVASCULAR DISEASE?</b><br><br>
+                  
+There are some steps you can take that
+could reduce the risk of cardiovascular
+disease. Prevention includes:
+Quitting smoking. Smoking is a habit
+that can be very difficult to stop. Letting
+friends and family members know
+you are trying to quit will help you
+get through rough times. Your health
+insurance plan covers up to eight (8)
+tobacco cessation counseling visits (per
+12 months), and the first two 90-day treatment regimens for certain
+medications at no cost. You can also
+talk to your doctor to find out what
+alternatives there are to help you quit.<br><br>
+                  
+<b>Lowering cholesterol.</b> Reading the
+labels on food packaging can help scale
+back on high cholesterol foods. Eating
+heart healthy foods, such as fish, may
+help prevent high cholesterol.<br><br>
+
+<b>Controlling high blood pressure.</b> By
+reducing sodium and cutting caffeine
+in your diet, you may lower high blood
+pressure.<br><br>
+                  
+<b>Maintaining a healthy weight.</b> When
+you exercise, you burn calories. Regular
+physical activity will help you maintain a
+healthy weight reducing your factors of
+heart disease.<br><br>
+                  
+<b>WHAT ARE THE STATISTICS?</b><br>
+According to Centers for Disease Control
+and Prevention website, about 610,000
+people die of heart disease in the United
+States every year. That’s one in every
+four deaths.<br>
+• More than half of the deaths due to
+heart disease in 2009 were men.<br>
+• Coronary heart disease (CHD) is the
+most common type of heart disease,
+killing over 370,000 people annually.<br>
+• Every year, 735,000 Americans have a
+heart attack.
+                  
+                  
+                  
+                  
+                  
+                  
+                </p>
+
+              </div>
+              <br />
+              <h2><center>Are You Getting Enough Sleep?</center></h2>
+              <br />
+              <div class="well">
+              
+            <center> <img src="../../app_themes/blankcanvas/maineenews/images/sleepcover.jpg" class="img-responsive" style=max-height:400px;></center>
+
+             <br><br>
+
+
+             <p>Sleep plays a very important role in overall good health
+throughout your life. Getting the right amount of sleep
+protects your mental health, physical health and quality of
+life. The way you feel throughout the day depends on the
+amount of quality sleep you get. In children and young
+adults, sleep helps support growth and development. Sleep
+can affect how well you think, react, work, learn and interact
+with others.</p><br><br>
+
+                <p>
+                  <b>How Sleep Helps</b>
+                </p>
+<b>Physical Health.</b> When you sleep, your body is healing to
+repair your heart and blood vessels. Sleep deficiency is linked
+to increased risk of heart and kidney disease and high blood
+pressure. Not getting enough sleep also increases the risk of
+obesity, especially in young adults.<br><br>
+                
+<b> Daytime Performance.</b> Your body relies on sleep. Having a
+sleep deficiency will cause less productivity throughout the
+day. When performing everyday tasks, such as driving or
+having a conversation, a person with sleep deficiency may
+think they are paying attention, but their mind actually isn’t
+processing all of the information. In the case of driving, this
+could not only be harmful to that person, but also to the
+people around them.
+                <p><br><br>
+                  
+                  <!--Infographic-->
+                  <center><img src="../../app_themes/blankcanvas/maineenews/images/sleepinfo.png" class="img-responsive"></center>
+
+                </p>
+              </div>
+              <br />
+
+              <h2><center>A Few Steps Can Make a Difference</center></h2>
+              <br />
+             <div class="well">
+             <center><img src="../../app_themes/blankcanvas/maineenews/images/walking.jpg" class="img-responsive" style=max-height:400px;></center>
+
+             <br><br><br>
+
+             <p>Walking is a simple exercise that offers significant benefits to our bodies. It’s known as a weight-bearing exercise because you are carrying your own body weight. Walking is a great way to improve our health because it is low impact, requires no equipment, and can be done at your own pace.<br><br>
+               <b>Get Motivated, Stay Motivated</b><br><br>
+               
+               
+              Getting motivated may be hard; staying motivated can be even harder! Walking with a group can help you stick with it for some added fun and excitement. Try walking in a scenic area that you don’t travel often. Walking only 30 minutes a day at a good pace will help improve your overall health.<br><br>
+When you are on your own, use these simple adjustments to build walking into your daily routine:<br>
+• Start taking the stairs instead of elevators.
+• Walk your dog instead of just letting him/
+her out. It will benefit both of you!
+• Park farther away from the entrance when
+going to work or out running errands.<br><br>
+               
+Use technology to get motivated! Make a playlist of your favorite songs to pass the time and keep up your pace. There are tons of apps and devices for tracking your daily steps each day. Try one out, and see how far you go. To get the most health benefit, it is recommended that you take 10,000 or more steps each day.<br><br>
+Buy new apparel! Buying a new pair of sneakers or new workout outfits can motivate you to make walking a hobby. Just make sure you buy the right apparel that offers the appropriate support for walking.<br><br>
+     
+ <b>THERE IS NO ELEVATOR TO SUCCESS.</b> YOU HAVE TO TAKE THE STAIRS.<br><br>
+Taking the stairs, instead of the elevator, can be a great workout for your lower body – in particular, your quads, hamstrings, glutes, hips, calves and feet. Taking the stairs contributes an extra 30 minutes to your total daily physical workout and burns twice as many calories as walking.
+                <center><img src="../../app_themes/blankcanvas/maineenews/images/caloriesinfo.png" class="img-responsive" style=max-height:400px;></center>
+               
+               
+               
+
+           
+
+             </div>
+              <br /><br />
+
+              <h2><center>Stay Active</center></h2>
+              <br />
+              <div class="well">
+
+             <center> <img src="../../app_themes/blankcanvas/maineenews/images/activecover.jpg" class="img-responsive" style=max-height:400px;></center>
+              <br><br><br>
+
+           
+             <br>
+              
+
+              <p>Sometimes, it can be difficult to fit physical activity into your busy schedule; however, it’s vital to your overall health. Exercising regularly can potentially decrease your risk of disease and avoid injuries and improve your physical and mental health. According to the 2008 Physical Activity Guidelines for Americans, it is recommended that we participate in both moderate-intensity aerobic activity (like fast walking) and muscle-strengthening activities each week.<br><br>
+                
+<b>Try These Physical Activities This Summer!</b><br><br>
+<b>1. WALKING CAN HELP PREVENT TYPE 2 DIABETES.</b> In a study from The Diabetes Prevention Program, walking 150 minutes per week and losing 7% of your body weight can reduce your risk of diabetes by 58%.<br><br>
+
+<b>2. WALKING CAN STRENGTHEN YOUR HEART.</b> Your heart is a very strong muscle. Walking increases our heart rate which pumps blood and oxygen to our muscles, keeping it strong.<br><br>
+                
+<b>3. WALKING IS GOOD FOR YOUR BRAIN.</b> Walking is a
+good opportunity to let your mind wander. Meditation is the key to good mental health.<br><br>
+                
+<b>4. WALKING IS GOOD FOR YOUR BONES.</b> Because
+walking is a weight-bearing exercise, you are
+increasing the stress on your bones (especially your
+hips), strengthening them.<br><br>
+                
+<b>5. WALKING HELPS ALLEVIATE SYMPTOMS</b> OF
+DEPRESSION. A person does not have to run a
+marathon to alleviate symptoms of depression. A
+short, simple walk daily can help ease anxiety.<br><br>
+                
+<b>6. WALKING MAY REDUCE RISK OF CANCER.</b> Most cancers are caused by lifestyle factors. Exercise is one of the most important actions to help guard against many types of cancer.<br><br>
+                
+<b>7. WALKING IMPROVES OVERALL FITNESS.</b> Walking
+keeps your muscles moving, burns calories and
+eases the mind! It’s a great way to cover all the bases
+to improve your overall well being.
+                </p>
+                
+                   <center> <img src="../../app_themes/blankcanvas/maineenews/images/activeinfo.png" class="img-responsive" style=max-height:400px;></center>
+
+              </div>
+              <br />
+
+                  <h2><center>Do You Drink Enough Water?</center></h2>
+              <br>
+
+              <div class="well">
+
+               <center><img src="../../app_themes/blankcanvas/maineenews/images/water.jpg" class="img-responsive" style=max-height:400px;><center>
+
+               <br><br><br>
+
+               <p>
+Drinking the recommended eight 8oz. glasses of water per day offers these benefits:<br><br>
+<b> 1. Increases energy and relieves fatigue.</b> If you are not hydrated, your heart works harder, making
+you feel tired.<br><br>
+<b>2. Promotes weight loss.</b> Drinking water flushes the fats out of your body.<br><br>
+<b>3. Flushes out toxins.</b> Water helps fight against bad toxins in your
+body and boosts your immune system.<br><br>
+<b>4. Improves skin complexion.</b> Water helps replenish and
+hydrate the skin.<br><br>
+<b>5. Maintains regularity.</b> Drinking water regulates your
+metabolism and helps in digestion.<br><br>
+<b>6. Natural headache remedy.</b> Headaches and cramps are a
+common side effect of dehydration.<br><br>
+<b>7. Prevents cramps and strains.</b> Staying properly hydrated
+helps lubricate joints and muscles.<br><br>
+<b>8. Puts you in a good mood.</b> If your body is hydrated, it feels
+healthy and happy.<br><br>
+<b>What happens when you are dehydrated?</b><br>
+When your body doesn’t have enough water, you get symptoms such as tiredness, migraine, constipation, cramps, kidney problems and dry skin.<br><br>
+                 </p>
+                               <center><img src="../../app_themes/blankcanvas/maineenews/images/waterinfo.png" class="img-responsive" style=max-height:400px;><center>
+
+
+               
+              </div>
+                 
+                 
+                 <br />
+
+                  <h2><center>Emergency Room Or Urgent Care/Clinic</center></h2>
+              <br>
+
+              <div class="well">
+
+               <center><img src="../../app_themes/blankcanvas/maineenews/images/emergency.jpg" class="img-responsive" style=max-height:400px;><center>
+
+               <br><br><br>
+
+ <p style="text-align:left;">Your primary care doctor is the best place to seek care when you are sick or injured. But what about those times you need treatment when the office is closed?<br><br>
+                 
+While in some cases, an emergency room visit is warranted, there are quicker and less expensive options available for getting care in non-emergency situations. Urgent care centers and walk-in clinics are convenient, cost-saving alternatives to a hospital emergency room.<br><br>
+                 
+<b> What's The Difference?</b><br>Many times, those with less urgent needs may have a long wait at the emergency room in order for those with more serious conditions to be treated first. At urgent care centers and walk-in clinics, patients are treated on a first-come, first-serve basis. Urgent care and walk-in clinics are also often less expensive than the emergency room, and you still receive care from a qualified health care provider.<br><br>
+                 
+                <b> Cost Difference</b><br><br>
+                 </p>
+                 
+                 <table class="table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Emergency Room</th>
+      <th>Urgent Care Facility</th>
+      <th>Walk-In Clinic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>$300 copay*</td>
+      <td>$25 copay**</td>
+      <td>$25 copay***</td>
+    </tr>
+
+                 </table>
+                 <br>
+               <p style="text-align:left;"> *Waived if admitted to in-patient status<br>**Deductible and coinsurance will apply when seeking care outside the Aetna network.</p><br><br>
+                 
+                          <center><img src="../../app_themes/blankcanvas/maineenews/images/emergencyinfo.png" class="img-responsive" style=max-height:400px;><center><br>
+                            <p>
+ To find an in-network urgent care center or walk-in clinic, visit
+<a href="http://www.AetnaStateofMaine.com">www.AetnaStateofMaine</a>, use the DocFind® link (see Toolkit) or contact Aetna Member Services at 1-855-850-0039.
+                            </p>
+
+
+           
+              </div>
+                 
+         <br />
+              <h2><center>Aetna Discount Programs</center></h2>
+              <br />
+              <div class="well">
+              
+            <center> <img src="../../app_themes/blankcanvas/maineenews/images/aetna.jpg" class="img-responsive"></center>
+
+             <br><br>
+
+
+             <p>Your health and wellness are a priority, but maintaining good health can get pricey. The Aetna Discount Program can save you money on a variety of health and wellness resources.<br><br>
+               <b>FITNESS DISCOUNTS</b>
+Save on:<br>
+• Gym memberships<br>
+• Brand-name home fitness products<br>
+• Nutritional products<br><br>
+               <b>WEIGHT MANAGEMENT DISCOUNTS</b>
+Save on:<br>
+• At-home weight-loss programs<br>
+• One-on-one health coaching services<br>
+• Most popular weight-loss programs and meal plans, such as CalorieKing®,
+Jenny Craig® and Nutrisystem®<br><br>
+The Aetna Discount Program is offered at no cost to plan members.
+Start saving today! Log into Aetna Navigator, your secure member website, at
+<a href="http://www.AetnaStateofMaine.com">www.AetnaStateofMaine.com</a> (see Toolkit) for more details on these discounts and the many more available.</p><br><br>
+
+               
+
+                
+              </div>         
+                 
+                 
+                 
+                 
+                 
+                 
+                
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+                
+                    <script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3,h4,h5"
+            }).data("toc-tocify");
+
+            prettyPrint();
+            $(".optionName").popover({ trigger: "hover" });
+
+        });
+    </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>State of Maine E-News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../../app_themes/blankcanvas/maineenews/stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+    <link href="../../app_themes/blankcanvas/maineenews/stylesheets/jquery.tocify.css" rel="stylesheet">
+    <link href="../../app_themes/blankcanvas/maineenews/stylesheets/prettify.css" type="text/css" rel="stylesheet" />
+    
+    <!-- Favicon images-->
+    
+      <link rel="apple-touch-icon" sizes="57x57" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../../app_themes/blankcanvas/maineenews/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../app_themes/blankcanvas/maineenews/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../../app_themes/blankcanvas/maineenews/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../app_themes/blankcanvas/maineenews/images/favicon-16x16.png">
+<link rel="manifest" href="../../app_themes/blankcanvas/maineenews/images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/app_themes/blankcanvas/maineenews/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+      <script src="../../app_themes/blankcanvas/maineenews/js/jquery-1.8.3.min.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/jquery-ui-1.9.1.custom.min.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/bootstrap.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/jquery.tocify.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/prettify.js"></script>
+ 
+     
+
+  
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10627922-49', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <title>
+	Maine E-News
+</title></head>
+    <body>
+        
+
+        
+<style>
+
+.hidden{display:none;}
+.hero-unit p{color:#eeeeee;}
+.hero-unit h1, h3{color:#eeeeee;}
+
+.hero-unit {
+
+  background-color: #6DA0A9;
+
+
+
+}
+/*white fruit text*/
+.white{ 
+color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,  
+    1px 1px 0 #000; 
+}
+
+   .activelink{
+     color:#005580;
+     text-decoration:unerline;
+   }
+
+
+
+h1, h2, h3, h4, h5, p, li, ol , span{
+
+
+    font-family: 'Raleway', sans-serif;
+
+
+
+}
+
+
+
+
+    body {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .headerDoc {
+      color: #005580;
+    }
+
+@media (max-width: 767px) {
+
+
+
+
+  .logo
+  {
+
+
+  }
+    #toc  {
+        position: relative;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+   
+   
+   /* divider styling */
+  .divider {
+  height: 1px;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+    </style>
+  
+
+
+
+
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div id="toc">
+          <img src="../../app_themes/blankcanvas/maineenews/images/mainelogo.png" class="img-responsive logo">
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1><center>State of Maine</center></h1>
+            <h3>
+              <center>Your Health &amp; Wellness Newletter<br><P>
+                
+                June Edition 1</P></center>
+            </h3>
+            
+            <br />
+            
+            <br />
+            <center><p>Brought to you by the State of Maine's Division of Employee Health &amp; Benefits
+            </p></center>
+             <center>  <p>
+              NewsLetter Archive
+            </p></center>
+           <!--Archives Edition-->
+            <span class="divider"></span>
+            
+            <center> <h4>
+              <A href="/maine-e-news/index.html">Winter Edition</A> |<A href="/maine-e-news/fall/index.html">Fall Edition</A> | <A href="/maine-e-news/summer/index.html">Summer Edition</A> <span>|</span>  <A class="activelink" href="/maine-e-news/june/index.html">June Edition</A> 
+            </h4></center>
+            
+          </div>
+
+              <h2><center>Healthcare Expense Tips</center></h2>
+              <br />
+              <div class="well">
+
+              <img src="../../app_themes/blankcanvas/maineenews/images/healthcareexpenses.jpg" class="img-responsive">
+              <br> <br><br>
+
+              
+                
+                <li style="list-style: none;">
+                        <ol><b>1. Use in-network providers;</b> they will generally be less costly than out-of-network providers because they honor discounted network rates. In-network plan coverage applies lower copays, deductible and coinsurance.</ol>
+                        <ol><b>2. Understand your portion of the cost under your plan.</b> Out-of-network providers may charge more than the plan is willing to cover. If this is the case, you would be responsible for your portion of the cost up to plan limits and the full amount beyond plan limits.</ol>
+                        <ol><b>3. Ask before you go!</b> While your primary doctor may be in-network, his/her referrals may not be. Be sure to check before receiving care.</ol>
+                        <ol><b>4. Know what care is considered “preventive.”</b><br>
+                        When receiving preventive care services, such as during a wellness exam, you may receive additional services that fall outside of the “preventive” category, such as additional screenings after a diagnosis is made. This may no longer fall under preventive care. These additional procedures will be covered under the plans’ medical bene t – not preventive – which means you may be responsible for paying a share of the cost.</ol>
+                        <ol><b>5. Search for doctors,</b> review their quali cations (schooling, specialties, ratings, etc.) and compare costs for services. See your provider’s quali cations at www.GetBetterMaine.org.</ol>
+                        <ol><b>6. Use urgent care centers</b> if your medical need isn’t serious or life threatening and you can’t get an appointment with your primary care physician.</ol>
+                        <ol><b>7. Choose the right place for your medical services and procedures.</b> You can generally have signi cant cost savings by choosing an in-network, freestanding lab or outpatient surgery center as opposed to a hospital. And visiting independent radiology centers (for an X-ray or CT scan) can potentially save you hundreds of dollars. These centers can provide you with the quality of service you would get at a hospital, but usually at a lower price. Costs vary between providers.</ol>
+                        <ol><b>8. Take advantage of the 90-day prescription copays.</b> Talk with your doctor to request a 90-day prescription for maintenance medications you take on a regular basis. For example, the copay for a 30-day supply of generic is $10; a 90-day supply is $15.</ul>
+
+
+                    </li>
+
+
+              </div>
+              <br />
+              <h2><center>Summer Workouts/Sun Safety</center></h2>
+              <br />
+              <div class="well">
+              
+             <img src="../../app_themes/blankcanvas/maineenews/images/summerworkout.jpg" class="img-responsive">
+
+             <br><br><br>
+
+
+             <p>It’s easy to be a affected by sun exposure and heat exhaustion when exercising outside. Keep these sun safety tips in mind before you head out:</p>
+
+                <li style="list-style: none;">
+                <ol>1. Wear the appropriate attire.
+                Go with lightweight, light colored and loose- tting clothing. “Wicking” fabrics will help keep you dry as it “wicks” away sweat from your skin.</ol>
+                <ol>2. Stay hydrated. Drink plenty of water and consider electrolyte replacement for longer workouts.</ol>
+                <ol>3. Protect your skin. Use sunscreen with SPF 15 or higher to help prevent sunburn, even on cloudy days.</ol>
+                <ol>4. Consider the time of day. The sun is at its strongest between 10am and 4pm. Temperatures may be more manageable before and after those times, so you may want to consider early morning or late afternoon/early evening workouts.</ol>
+                <ol>5. Listen to your body. Don’t overexert yourself. It’s important that you listen to your body; consider how you are feeing
+                and adjust the intensity of your workout accordingly.</ol>
+              
+              </div>
+              <br />
+
+              <h2><center>What's On Your Plate</center></h2>
+              <br />
+             <div class="well">
+             <center><img src="../../app_themes/blankcanvas/maineenews/images/fullplate.png" class="img-responsive"></center>
+
+             <br><br><br>
+
+             <p>We know that apple slices are a healthier snack choice than potato chips, and we know that a side of peas and carrots would be better for us than a side of macaroni and cheese. Even if we don’t always make the better choice, we’re well aware that fruits and vegetables are a healthy part of any meal. Eating more fruits and vegetables can help reduce your risk for certain chronic diseases, such as heart disease, type 2 diabetes and high blood pressure.<br><br> But, do you know how much broccoli should be on your plate? Is “an apple a day” really enough? Well, we’re about to clear that up for you!
+                Generally, the recommended daily amount of fruits and vegetables is based on your age, gender and level of physical activity. See the charts below for a summary of daily recommended amounts of fruit and vegetable intake.</p><br>
+
+               <h3><center>The More Color, The Better</center></h3>
+                
+
+                 <center><img src="../../app_themes/blankcanvas/maineenews/images/info.png" class="img-responsive"></center>
+
+
+
+
+
+             </div>
+              <br /><br />
+
+              <h2><center>Medical Cost Reduction</center></h2>
+              <br />
+              <div class="well">
+
+              <img src="../../app_themes/blankcanvas/maineenews/images/medicalcosts.jpg" class="img-responsive">
+              <br><br><br>
+
+           
+             <br>
+              
+
+              <p>Controlling the cost of medical insurance is a partnership. The State Employee Health Commission and Aetna do their part by negotiating reimbursement rates and seeking other ways to reduce costs. But, our members have the biggest impact on the cost of care, and ultimately, premiums.<br><br>
+                
+                The State of Maine’s Point of Service Health Insurance Plan is self-insured, which means the participating employers (e.g., State of Maine, Maine Community College System, etc.) collect premiums and pay their own claims rather than paying premiums to an insurer. While these employers engage Aetna to help administer claims processing and maintain the provider network, it’s these same employers that assume the risk of paying claims. This ultimately reduces costs because more premium dollars – from both the employers and you – are directed to funding claims rather than insurance company pro ts. However, we also feel the impact when medical claims (costs) rise.<br><br>
+
+                In the past four years, the total claims the health plan has paid out has increased 36% and is now paying over $13,000/year per primary subscriber; that’s in excess of $200 million per year.<br><br>
+
+                Hypertension and Hyperlipidemia are the two conditions that consistently cost the Health Plan the most in claims. As a matter of fact, together they account for more than half of all claims. These conditions are more commonly known as high blood pressure and high cholesterol.<br><br>
+
+                Fortunately, these are conditions that you can control through diet, exercise and stress management. Inexpensive prescription medications also are proven e ective in improving your blood pressure and cholesterol levels. Of course, cost isn’t the only issue. Both of these conditions can lead to heart attack and stroke if not addressed.</p>
+
+
+              </div>
+              <br />
+
+                  <h2><center>Healthcare Shopping</center></h2>
+              <br>
+
+              <div class="well">
+
+               <center><img src="../../app_themes/blankcanvas/maineenews/images/shopping.png" class="img-responsive"><center>
+
+               <br><br><br>
+
+               <p>
+                  You probably shop around for the best price on most of the things you buy. Whether it’s checking the price of di erent cereals in the grocery store aisle or driving to car lots looking for the best deal on a car, we all shop around for the best mix of price and quality.
+                  Now, you can comparison shop for health care services at <a href="www.comparemaine.org.html">CompareMaine</a>, and you would be amazed by how much you can save.<br><br>
+                  CompareMaine.org is an easy to use Web resource that lists the cost of dozens of Maine health care providers for a wide range of procedures. Simply go to the site, click “ nd a cost of a procedure” and you will be taken to a list of di erent procedures from routine to acute. <a href="www.comparemaine.org.html">CompareMaine</a> also lists patient quality ratings so you can see that cheaper cost doesn’t mean inferior service.<br><br>
+                  Here’s an example. Arthroscopic knee surgery at one facility with an average patient experience rating is $9,019. The cost of another facility only 45 minutes away is $4,648 for the same procedure. You wouldn’t be compromising on quality for the lower cost, as the patient experience rating is actually higher at the less expensive facility. Do the math. A savings of $4,500 for better rated care
+                  less than an hour’s drive apart.<br><br>
+                  <a href="www.comparemaine.org.html">CompareMaine</a> is a tool that can make you a truly informed health care consumer. There is no
+                  cost to use it, and you don’t have to enter in any personal information.
+
+
+               </p>
+
+
+              </div>
+                
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+                
+                    <script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3,h4,h5"
+            }).data("toc-tocify");
+
+            prettyPrint();
+            $(".optionName").popover({ trigger: "hover" });
+
+        });
+    </script>
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>State of Maine E-News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../../app_themes/blankcanvas/maineenews/stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+    <link href="../../app_themes/blankcanvas/maineenews/stylesheets/jquery.tocify.css" rel="stylesheet">
+    <link href="../../app_themes/blankcanvas/maineenews/stylesheets/prettify.css" type="text/css" rel="stylesheet" />
+    
+    <!-- Favicon images-->
+    
+      <link rel="apple-touch-icon" sizes="57x57" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../app_themes/blankcanvas/maineenews/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../../app_themes/blankcanvas/maineenews/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../app_themes/blankcanvas/maineenews/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../../app_themes/blankcanvas/maineenews/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../app_themes/blankcanvas/maineenews/images/favicon-16x16.png">
+<link rel="manifest" href="../../app_themes/blankcanvas/maineenews/images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/app_themes/blankcanvas/maineenews/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+      <script src="../../app_themes/blankcanvas/maineenews/js/jquery-1.8.3.min.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/jquery-ui-1.9.1.custom.min.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/bootstrap.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/jquery.tocify.js"></script>
+    <script src="../../app_themes/blankcanvas/maineenews/js/prettify.js"></script>
+    
+     
+
+  
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10627922-49', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <title>
+	Maine E-News
+</title></head>
+    <body>
+   
+        
+ <style>
+
+ .hidden{display:none;}
+.hero-unit p{color:#eeeeee;}
+.hero-unit h1, h3{color:#eeeeee;}
+
+.hero-unit {
+
+  background-color: #6DA0A9;
+   }
+ .activelink{
+     color:#005580;
+     text-decoration:unerline;
+   }
+
+
+
+/*white fruit text*/
+.white{ 
+color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,  
+    1px 1px 0 #000; 
+}
+
+   .divider {
+  height: 1px;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+
+
+
+h1, h2, h3, h4, h5, p, li, ol , span{
+
+
+    font-family: 'Raleway', sans-serif;
+
+
+
+}
+
+
+
+
+    body {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .headerDoc {
+      color: #005580;
+    }
+
+@media (max-width: 767px) {
+
+
+
+
+  .logo
+  {
+
+
+  }
+    #toc  {
+        position: relative;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+    </style>
+  
+
+
+
+
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div id="toc">
+          <img src="../../app_themes/blankcanvas/maineenews/images/mainelogo.png" class="img-responsive logo">
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1><center>State of Maine</center></h1>
+            <h3>
+              <center>Your Health &amp; Wellness Newletter<br><P>
+                
+                 Fall Edition </P></center>
+            </h3>
+           
+            
+            <br />
+            
+            <br />
+            <center><p>Brought to you by the State of Maine's Division of Employee Health &amp; Benefits
+            </p></center>
+          <center>  <p>
+              NewsLetter Archive
+            </p></center>
+           <!--Archives Edition-->
+            <span class="divider"></span>
+            
+            <center> <h4>
+            <A  href="/maine-e-news/index.html">Winter Edition</A> | <A class="activelink" href="/maine-e-news/fall/index.html">Fall Edition</A> | <A href="/maine-e-news/summer/index.html">Summer Edition</A> <span>|</span>  <A  href="/maine-e-news/june/index.html">June Edition</A> 
+            </h4></center>
+            
+          </div>
+
+              <h2><center>The Benefits of Fall</center></h2>
+              <br />
+              <div class="well">
+
+            <center>  <img src="../../app_themes/blankcanvas/maineenews/images/fall-1-img-header.jpg" class="img-responsive" style=max-height:400px;></center>
+              <br> <br><br>
+
+              
+                
+                <p>
+                
+Now that fall has arrived and the temperature has begun to drop, some may be
+making the mistake of putting their running shoes away until next summer. Did
+you know your body burns more calories during the colder weather? Your body
+uses more energy to generate heat, thus shedding even more calories than it would during warmer temperatures due to your metabolic rate increasing to warm
+your body.<br><br>
+                  
+                  There are also delicious, healthy foods available in the fall that we miss out on during the summer: root vegetables and crisp fruits — the perfect comfort foods to enjoy as the weather begins to cool..<br><br>
+
+<b>SIMPLE EVERYDAY EXERCISES</b><br><br>
+                  
+<b>Yard Work–</b> Raking the yard is a lot
+like doing the laundry: there is always
+more coming the next day. This is an
+easy, productive exercise that keeps
+your body moving more than it does
+when using a leaf blower. The average
+150 pound person will burn about 235
+calories in 45 minutes of leaf-raking.
+<br><br>
+                  
+<b>Go for a walk or jog –</b> Be quick and
+brisk. You burn fewer calories if you
+walk at the strolling rate of a 30-minute
+mile, so challenge yourself to a faster
+pace. Also seek trails with inclines, dips
+or some sort of variations. This will
+burn twice the amount of calories than
+walking on a flat route.
+              <br><br>    
+<b>Enjoy the weather –</b> Before the snow
+hits the ground, take advantage of the
+crisp, cool weather. Instead of sitting
+in the break room, try going for a walk
+during your lunch break. If you are at
+soccer practice waiting for your children
+to be done, go for a walk, bring another
+parent with you as you walk.<br><br>
+
+<b>GET MOVING, GET STARTED</b>
+Let’s not forget to do the one thing
+we encourage our kids to constantly
+do: Go outside. There are amazing
+benefits you can only receive during
+the cooler weather, so open up that
+door and take your first step.   <br><br>
+                  
+<b>FALL FOODS WITH BENEFITS</b>
+                   <center> <img src="../../app_themes/blankcanvas/maineenews/images/fall-1-img.png" class="img-responsive" style=max-height:400px;></center>
+                  
+                  
+                  
+                  
+                </p>
+
+              </div>
+              <br />
+              <h2><center>Nutrition: Sodium</center></h2>
+              <br />
+              <div class="well">
+              
+            <center> <img src="../../app_themes/blankcanvas/maineenews/images/sodium.png" class="img-responsive" style=max-height:400px;></center>
+
+             <br><br>
+<p><b>ON AVERAGE, AMERICAN ADULTS EAT MORE THAN 3, 400
+MILLIGRAMS OF SODIUM DAILY,</b> which is more than double
+the American Heart Association’s recommended limit of
+1,500 mg. Where does the sodium we eat come from?
+  
+  <br><br>
+You may be surprised to learn that only about 10 percent
+comes from home cooked meals and 25 percent from
+restaurants. The remaining 65 percent accumulates from
+processed foods you would find at the grocery store such
+as frozen pizzas or canned soup. One cup of chicken noodle
+soup can have up to 940 mg of sodium.
+  
+  <br><br>
+Too much sodium can increase your risk for high blood
+pressure, which in turn can lead to heart disease and
+stroke. Learning to read and understand food labels can
+help you make healthier choices, and practice portion
+control.
+  <br><br>
+Just a reminder, that two nutritional counseling visits are
+provided per 12 months at no cost with an in-network
+provider under the State of Maine Point of Service health
+insurance plan. No diagnosis required (e.g. obesity) and
+visit can be with a registered dietician.
+
+                </p>
+              </div>
+              <br />
+
+              <h2><center>Healthcare Costs of Obesity</center></h2>
+              <br />
+             <div class="well">
+             <center><img src="../../app_themes/blankcanvas/maineenews/images/shoe-fall.png" class="img-responsive" style=max-height:400px;></center>
+<P>
+  <p>
+               
+             <br><br>
+			<b>WHAT IS OBESITY COSTING YOU?</b><br><br>
+Currently in the United States, obesity
+proves to be one of the biggest drivers
+of preventable chronic diseases and
+healthcare costs. Estimates range from
+$147 billion to nearly $210 billion per
+year. It also has a direct impact on the
+State of Maine health plan and the
+premiums you pay.
+               
+               <br><br>
+Setting the right goals is an important
+first step to losing and maintaining
+weight. Even a small weight loss (just
+5-10 percent of your current weight) will
+help to lower your risk of developing
+weight-related diseases.<br><br>
+               <b>BREAKDOWN OF THE COSTS</b><br><br>
+               
+• Obese adults spend 42 percent more on
+direct healthcare costs than adults who
+are a healthy weight.<br><br>
+  • Per capita healthcare costs for severely
+or morbidly obese adults (BMI >40) are 81
+percent higher than for healthy weight adults.
+In 2000, around $11 billion was spent on
+medical expenditures for morbidly obese U.S.
+adults.<br><br>
+• Moderately obese (BMI between 30 and 35)
+individuals are more than twice as likely as
+healthy weight individuals to be prescribed
+prescription pharmaceuticals to manage
+medical conditions.<br><br>
+• Costs for patients presenting at emergency
+rooms with chest pains are 41 percent higher
+for severely obese patients, 28 percent higher
+for obese patients and 22 percent higher for
+overweight patients than for healthy- weight
+patients.<br><br>
+
+ Visit <a href="http://www.maine.gov/deh/">www.maine.gov/deh/</a> and click on the Wellness tab to view the wide variety of wellness
+resources available.<br><br>
+  
+  <b>HOW TO LOSE WEIGHT
+&amp; MAINTAIN IT</b>
+  <br><br>
+  Changing the way you approach weight loss can help you
+be more successful at losing it. Most people who try to lose
+weight focus on one thing: weight loss. However if you set
+goals, begin to eat healthy foods, become more physically
+active, and learn how to change behaviors, then you may
+be more successful at losing weight. Over time, these
+changes will become routine and part of your everyday life.
+  
+  <br><br>
+Losing just 5-10 percent of your current weight over 6 months
+will lower your risk for heart disease and other conditions.
+</P>
+                <center><img src="../../app_themes/blankcanvas/maineenews/images/obesity.png" class="img-responsive" style=max-height:400px;></center>
+               
+               
+               
+
+           
+
+             </div>
+              <br /><br />
+
+              <h2><center>Chronic Condition Focus</center></h2>
+              <br />
+              <div class="well">
+
+             <center> <img src="../../app_themes/blankcanvas/maineenews/images/stress.jpg" class="img-responsive" style=max-height:400px;></center>
+              <br><br><br>
+
+           
+             <br>
+              
+
+              <p><b>Stress, Depression &amp; Anxiety</b><br><br>
+                                                                 
+                                               Know that when it comes to Stress, Depression & Anxiety that there is no over-the-counter, miracle remedy that will work overnight. The only medicine that will
+work the best is time, so give yourself a break. Here are some tips from Mental Health America:<br><br>
+                
+                
+ <b>Learn your triggers –</b> It’s important to identify and understand what and where your stress comes from.<br><br>
+
+<b>Know your limits –</b> Don’t take on more responsibility than you can handle right now.<br><br>
+                
+<b>Take things one at a time –</b> The last thing you need is to attempt to multitask. Just do one project or assignment or chore at a time. Don’t pile up all the other responsibilities in your mind.<br><br>
+                
+<b>Talk with someone –</b> Just being able to confide in a trusted friend, counselor or minister can help minimize and reduce your stress level.<br><br>
+                
+                
+<b>Practice stress reduction techniques –</b> Try tensing and relaxing the muscles in your toes and progressively working your way up to your neck and head, repeat words or suggestions in your mind to relax and reduce muscle tension. Take a visual journey to a peaceful, calming place or situation. Picture yourself on a beach (if that’s what calms you) imagine the feel of sand between your toes, the sound of crashing waves, and the salty breeze.<br><br>
+                
+                
+<b>LIVING RESOURCES PROGRAM</b><br><br>
+Personal issues, planning for life events or simply managing daily life can affect your work, health and family. Your Living Resources Program provides support, resources and information for personal and work-life issues.<br><br>
+                
+Living Resources is company-sponsored, confidential and provided at no charge to you and your dependents. Eligible members can schedule up to 5
+short-term counseling visits at no cost.
+                </p>
+                
+           
+              </div>
+              <br />
+
+                  <h2><center>Back To School Health Tips</center></h2>
+              <br>
+
+              <div class="well">
+
+                <center><img src="../../app_themes/blankcanvas/maineenews/images/flu.jpg" class="img-responsive" style=max-height:400px;></center>
+
+               <br><br><br>
+
+               <p><b>Preventing Colds &amp; Flu</b><br><br>
+                 
+Head back to school ready and prepared for Cold &amp; Flu season with these five simple tips:<br><br>
+
+<b>Ward off Germs:</b> Germs are spread through hand-to-hand contact or when sneezed or coughed into the air. To minimize
+exposure, avoid shaking hands, keep away from others who are sick and stay out of crowded rooms.<br><br>
+                 
+<b>Keep Hands Clean:</b> The first and easiest line of defense against the spread of germs is washing hands often. Wet, lather,
+and scrub for twenty seconds. Hum the “Happy Birthday” song from beginning to end, twice, to ensure the approximate
+handwashing time.<br><br>
+                 
+<b>Eat Immune-Boosting Foods:</b>Soluble fiber—found in citrus fruits, apples, carrots, beans and oats—helps fight inflammation. Broccoli is packed with vitamins A, C, and E, as well as numerous antioxidants, making it one of the healthiest vegetables you can put on your table.<br><br>
+
+ <b>Clear the Nose and Sinuses:</b> Germs often settle first in the nose and sinuses, so it’s important to keep nasal passages clear by either flushing them out with a saltwater solution or loosening secretions with a facial steamer or vaporizer.<br><br>
+                 
+<b>Stay Active:</b> Movement mobilizes the immune system. Kids who sit too much – especially indoors – get sick more often. Movement also mellows the mood, as stress depresses the immune system. Simple household chores like walking the dog or checking the mailbox can help your child stay active.<br><br>
+                 
+                 <b>The seasonal flu vaccine is covered at 100% (zero copay) on the State of Maine’s Point of Service health insurance plan when provided by an in-network provider. For more information contact Aetna Member Services at 1-855-850-0039.</b>
+   </p>
+                 
+          
+
+            
+              </div>
+                 
+                 
+                 <br />
+
+                  <h2><center>Calender of Events</center></h2>
+              <br>
+
+              <div class="well">
+
+                <center><img src="../../app_themes/blankcanvas/maineenews/images/calender.png" class="img-responsive" style=max-height:400px;></center>
+
+            
+
+
+           
+              </div>
+                 
+         <br />
+              <h2><center>Healthy Recipe</center></h2>
+              <br />
+              <div class="well">
+              
+            <center> <img src="../../app_themes/blankcanvas/maineenews/images/Recipe.png" width="700px" class="img-responsive"></center>
+
+  
+                
+              </div>         
+                 
+                 
+                 
+                 
+                 
+                 
+                
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+                
+                    <script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3,h4,h5"
+            }).data("toc-tocify");
+
+            prettyPrint();
+            $(".optionName").popover({ trigger: "hover" });
+
+        });
+    </script>
+
+
+        
+
+    </body>
+</html>

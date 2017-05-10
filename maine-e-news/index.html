@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>State of Maine E-News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../app_themes/blankcanvas/maineenews/stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+    <link href="../app_themes/blankcanvas/maineenews/stylesheets/jquery.tocify.css" rel="stylesheet">
+    <link href="../app_themes/blankcanvas/maineenews/stylesheets/prettify.css" type="text/css" rel="stylesheet" />
+    
+    <!-- Favicon images-->
+    
+      <link rel="apple-touch-icon" sizes="57x57" href="../app_themes/blankcanvas/maineenews/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../app_themes/blankcanvas/maineenews/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../app_themes/blankcanvas/maineenews/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../app_themes/blankcanvas/maineenews/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../app_themes/blankcanvas/maineenews/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../app_themes/blankcanvas/maineenews/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../app_themes/blankcanvas/maineenews/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../app_themes/blankcanvas/maineenews/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../app_themes/blankcanvas/maineenews/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../app_themes/blankcanvas/maineenews/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../app_themes/blankcanvas/maineenews/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../app_themes/blankcanvas/maineenews/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../app_themes/blankcanvas/maineenews/images/favicon-16x16.png">
+<link rel="manifest" href="../app_themes/blankcanvas/maineenews/images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/app_themes/blankcanvas/maineenews/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+
+    
+      <script src="../app_themes/blankcanvas/maineenews/js/jquery-1.8.3.min.js"></script>
+    <script src="../app_themes/blankcanvas/maineenews/js/jquery-ui-1.9.1.custom.min.js"></script>
+    <script src="../app_themes/blankcanvas/maineenews/js/bootstrap.js"></script>
+    <script src="../app_themes/blankcanvas/maineenews/js/jquery.tocify.js"></script>
+    <script src="../app_themes/blankcanvas/maineenews/js/prettify.js"></script>
+    
+     
+
+  
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10627922-49', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <title>
+	Maine E-News - Home Page
+</title></head>
+    <body>
+   
+<style>
+
+.hidden{display:none;}
+.hero-unit p{color:#eeeeee;}
+.hero-unit h1, h3{color:#eeeeee;}
+
+.hero-unit {
+
+  background-color: #6DA0A9;
+   }
+ .activelink{
+     color:#005580;
+     text-decoration:unerline;
+   }
+
+
+
+/*white fruit text*/
+.white{ 
+color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,  
+    1px 1px 0 #000; 
+}
+
+   .divider {
+  height: 1px;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+
+
+
+h1, h2, h3, h4, h5, p, li, ol , span{
+
+
+    font-family: 'Raleway', sans-serif;
+
+
+
+}
+
+
+
+
+    body {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .headerDoc {
+      color: #005580;
+    }
+
+@media (max-width: 767px) {
+
+
+
+
+  .logo
+  {
+
+
+  }
+    #toc  {
+        position: relative;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+    </style>
+  
+
+
+
+
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div id="toc">
+          <img src="../app_themes/blankcanvas/maineenews/images/mainelogo.png" class="img-responsive logo">
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1><center>State of Maine</center></h1>
+            <h3>
+              <center>Your Health &amp; Wellness Newletter<br><P>
+                
+                 Winter Edition </P></center>
+            </h3>
+           
+            
+            <br />
+            
+            <br />
+            <center><p>Brought to you by the State of Maine's Division of Employee Health &amp; Benefits
+            </p></center>
+          <center>  <p>
+              NewsLetter Archive
+            </p></center>
+           <!--Archives Edition-->
+            <span class="divider"></span>
+            
+            <center> <h4>
+            <A class="activelink" href="index.html">Winter Edition</A> | <A  href="fall/index.html">Fall Edition</A> | <A href="summer/index.html">Summer Edition</A> <span>|</span>  <A  href="june/index.html">June Edition</A> 
+            </h4></center>
+            
+          </div>
+
+              <h2><center>New Year New You</center></h2>
+              <br />
+              <div class="well">
+
+            <center>  <img src="../app_themes/blankcanvas/maineenews/images/new%20year%20new%20you.jpg" class="img-responsive" style="max-height:400px;"></center>
+              <br> <br><br>
+
+
+
+              
+                
+                <p>
+                
+With a new year comes a chance for new beginnings. Why not try to start the new year off right by taking the path toward better health? For instance, cut
+back on salty foods, drink more water and less soda, take the stairs instead of an elevator and consistently get a good night’s sleep. Small changes can
+reap big rewards. If you want to tackle bigger challenges, like losing weight, preparing for a marathon or quitting smoking, don’t feel overwhelmed. Talk
+to someone, make a plan, and above all, take one day at a time. You have all year to walk down that path!<br><br>
+                   </p>
+                
+<p>
+  
+              
+<b>TOBACCO CESSATION</b><br><br>
+ Is one of your New Year’s resolutions
+to quit smoking? Your health plan
+can help. Plan coverage includes:             
+</p>  
+                <ul>
+                  <li>First two 90-day treatment
+regimens for certain medications
+provided at no cost.</li>
+                  <li>Up to 8 tobacco cessation
+counseling visits per 12 months
+provided at no cost with an innetwork
+provider.</li>
+                  <li>One lung cancer screening is
+provided per 12 months at no
+cost to eligible members. (Certain
+criteria must be met for a lung
+cancer screening. Contact your
+provider or Aetna Member Services
+at 1-855-850-0039 for more
+information.)</li>
+                </ul>
+
+              </div>
+              <br />
+              <h2><center>Make A Change</center></h2>
+              <br />
+              <div class="well">
+              
+            <center> <img src="../app_themes/blankcanvas/maineenews/images/make%20a%20change.jpg" class="img-responsive" style=max-height:400px;></center>
+
+             <br><br>
+<p><b>SLEEP BETTER</b><br><br>
+  Getting a good night’s sleep on a regular basis
+is key to a healthy lifestyle. It can benefit your
+heart, weight, memory, mood, quality of life
+and more. Studies indicate that too much or too
+little sleep may even affect how long you live.<br><br>
+  Tips for a restful sleep:</p>
+ 	<ul>
+      <li>Commit to a regular nighttime schedule.</li>
+      <li>Eat dinner at least two hours before bedtime;
+avoid alcohol, chocolate and caffeine for
+several hours beforehand as well.</li>
+      <li>Say goodnight to your iPad, laptop,
+smartphone and other devices at least an
+hour before your bedtime.</li>
+      <li>Dim the lights – harsh lighting is not conducive
+to setting the sleepy mood.</li>
+      <li>Turn off the TV. Read instead. (And no work
+in bed!)</li>
+      <li>Take a hot bath, drink a cup of warm herbal
+tea, listen to soothing music or do some light
+yoga poses to relax before going to bed.</li>
+    </ul><br><br>
+                <p>
+                  <b>TACKLE A BAD HABIT</b><br><br>
+                  
+                  Still haunted by some bad habits you haven’t
+been able to shake? Overcoming a bad habit
+– like being a procrastinator, eating too
+much fast food, snacking when not hungry
+or smoking cigarettes – will give you a great
+sense of accomplishment, improve your
+health and mood, and, in some cases, save you
+money. If you have some small faults you’d
+like to correct, don’t try to get rid of them
+all at once; pick one and work on it until you
+have it under control. Then, try another one
+if you’d like. Especially if you’re plagued with
+procrastination, don’t put off until next year
+what you can do now!<br><br>
+                  
+                  <b>OUT WITH THE OLD, NOT SO FAST!</b><br><br>
+                  
+                  As we ring in 2017, take time to say goodbye
+to the year we’re leaving behind. What has the
+year been like for you? Experience any first
+times (for instance, snorkeling, eating quinoa,
+going on a cruise)? What was your single best
+memory? What was your biggest challenge? Any
+shoulda coulda wouldas spring to mind? How
+will 2016 be remembered in your household? A
+little reflection can help you decide what you
+want for the new year.
+                </p>
+ 
+              </div>
+              <br />
+
+              <h2><center>Stay Active In The Winter</center></h2>
+              <br />
+             <div class="well">
+             <center><img src="../app_themes/blankcanvas/maineenews/images/winter%20activity.jpg" class="img-responsive" style=max-height:400px;></center>
+
+ 
+               
+             <br><br>
+ <p>	
+   Just because temperatures are falling and
+snow may cover the ground, don’t stay inside
+and hibernate. Get active! Fitness is important
+to keep you healthy during the cold-weather
+months. It boosts immunity, keeps off the
+weight and chases away the SAD (Seasonal
+Affective Disorder).<br><br>
+   
+   <b>TAKE A HIKE</b><br><br>
+   Walking in the snow is a great cardio workout. It
+gets the heart pumping and burns more calories,
+because the snow makes you put in more effort
+with each step you take. Add in a few hills on your
+trek to really burn some calories. So, if you have
+a choice between walking indoors (on a track or
+treadmill) and going outside, opt for the great
+outdoors. Of course, be careful where you walk,
+and make sure you stretch first.<br>
+   
+         <div class="alert" style="color:#666666;">
+         <b> Remember to dress appropriately for the
+      outdoors:<br><br>
+      <ul>
+
+      <li>Wear moisture-wicking fabrics, choose footwear
+      with treads, and stay away from the cotton socks,</li>
+
+      <li>wear sunscreen if outside for
+      over 10 minutes, and</li>
+
+      <li>stay hydrated – you still sweat
+      and lose water in the cold.</li>
+           </ul></b>
+          </div><br>
+   
+   <p>
+   <b>HIT THE SLOPES</b><br><br>
+   
+   Snow-based activities, such as cross-country
+skiing, downhill skiing, snowboarding and
+snowshoeing, are a great way to spend the day
+outside.<br><br>
+   
+Cross-country skiing works both your upper and
+lower body. It is hard work, but worth it if you
+want to burn a lot of calories. As a bonus, unlike
+downhill skiing, you don’t need to travel to your
+favorite ski resort to do it – your backyard or a
+snow-covered park will do.<br><br>
+   
+Snowboarding and snowshoeing are excellent
+winter fitness activities for improving balance and
+endurance while providing a great cardio workout.
+Both work the leg muscles (snowboarding also
+works the abdominal muscles).<br>
+   </p>
+    <div class="alert" style="color:#666666;">
+    <b>Maine offers the least crowded skiing on the
+East Coast, with some of the best terrain. You
+can choose from ski resorts that cater more
+to families and leisure skiers, night skiing and
+boarding, snow-tubing or
+backcountry skiing. For travel
+suggestions, visit the Maine Office
+of Tourism’s website at
+<a href="https://visitmaine.com" target="blank">www.visitmaine.com.</a></b>
+               </div><br>
+   <p>
+   <b>FIND AN ICE RINK</b><br><br>
+   Don’t forget, the ice can be fun, too – lace up
+the skates and go ice skating or pass out some
+sticks, grab a puck and start a friendly game of
+hockey. Is shuffleboard more your speed? Try its
+distant cousin, curling or put together a game of
+broomball – neither requires skates or skating
+experience. Many indoor rinks offer skating
+lessons and skate rentals, while outdoor rinks
+may be equipped with warming huts, covered
+skating areas and lights for night skating. If you’d
+rather skip the ice, there are a few roller-skating
+     rinks located throughout Maine.</p>
+   
+    <div class="alert" style="color:#666666;">
+    <b>FUN FACT:</b> <br> Playing in the snow for 30
+minutes will burn 100 to 200 calories.<br><br>
+<b>NOT SO FUN FACT:</b> <br> Shoveling the
+snow for 30 minutes will burn 200
+      to 300 calories.
+    </div><br>
+   <p>
+   <b>MAKE IT A FAMILIAR AFFAIR</b><br><br>
+   
+   Don’t forget, the ice can be fun, too – lace up
+the skates and go ice skating or pass out some
+sticks, grab a puck and start a friendly game of
+hockey. Is shuffleboard more your speed? Try its
+distant cousin, curling or put together a game of
+broomball – neither requires skates or skating
+experience. Many indoor rinks offer skating
+lessons and skate rentals, while outdoor rinks
+may be equipped with warming huts, covered
+skating areas and lights for night skating. If you’d
+rather skip the ice, there are a few roller-skating
+rinks located throughout Maine.
+   
+ </p>
+               
+
+           
+
+             </div>
+              <br /><br />
+
+              <h2><center>Importance of Protein</center></h2>
+              <br />
+              <div class="well">
+
+             <center> <img src="../app_themes/blankcanvas/maineenews/images/protein.jpg" class="img-responsive" style=max-height:400px;></center>
+              <br><br>
+
+          <p>
+            Everybody needs protein. Protein is an important
+component that exists naturally in every cell of the
+human body. From your hair, nails and skin on the
+outside of your body, to your hormones, enzymes,
+tissues, blood, bones, muscles and cartilage on the
+inside, protein plays many critical roles in keeping
+you alive and healthy.<br><br>
+Almost 20% of the human body is made up of
+proteins. Continuous daily intake of protein is
+essential – the dietary protein in the food we eat is
+our main source of the building blocks we need to
+sustain life. Because proteins are used to develop,
+grow and maintain our bodies, good nutrition
+(including sufficient protein intake) is essential
+during pregnancy and especially important for
+children and teens.
+          </p><br>
+                
+                <p>
+                  <b>PROTEIN IS A CRITICAL FOOD GROUP</b><br><br>
+                  As a rule, we must consume protein in our diets.
+We can use both plants and animals as a source of
+dietary protein; vegetarians and meat eaters alike
+can find enough protein for sustenance. Significant
+amounts of protein can be found in meat, fish, eggs,
+dairy products, legumes, nuts, seeds and some
+vegetables.
+                </p>
+                <ul>
+                  <li>Fish, in general, has less fat than meat and
+contains omega-3 fatty acids.</li>
+                  <li>Remove the skin on poultry to eliminate most of
+the saturated fat.</li>
+                  <li>Beans (such as pinto, black, kidney and garbanzo;
+also lentils and split peas) are loaded with fiber
+and have more protein than any other vegetable
+protein.</li>
+                  <li>Nuts (and nut butter) are a great source of protein,
+particularly almonds. Added bonus: Nuts are healthy sources of fat.</li>
+                  <li>Whole grains such as wheat germ and quinoa have
+more protein than refined or “white” food (white
+bread, white rice).</li>
+                  <li>Some plant-based foods (like legumes, tofu,
+tempeh and other soy protein products) can
+provide the same amount of protein as meats.</li>
+                  <li>Use lean cuts of meat (beef or pork) and trim away
+the fat.</li>
+                  <li>Both egg whites and egg yolks are ideal sources
+of dietary protein, but egg whites contain more
+without the cholesterol (and eggs in general are
+practically carbohydrate-free).</li>
+                  <li>Low-fat dairy products are a good source of
+protein.</li>
+                  <li>Brussel sprouts, broccoli, spinach, kale,
+mushrooms, asparagus and artichokes are highprotein
+vegetables.</li><br><br>
+                  
+                  <p>
+                    The type of protein you eat may factor in to weight
+loss goals and your overall health. For instance,
+avoid eating deli meats, hot dogs, sausages and
+other processed meats – they are not a dieter’s
+friend (and can be high in salt). You will probably
+want to seek out alternatives to milk and other dairy
+products if they cause digestive issues. And while
+nuts are a healthy source of fat, keep in mind they
+are also high in calories.<br><br>
+                    
+                    <b>TOO MUCH OF A GOOD THING…</b><br><br>
+                    
+                    While protein is essential for a healthy diet, eating
+more protein than your body needs could cause
+some health issues, like kidney stress, intestinal
+irritation and dehydration. Calories from excess
+protein will be converted to sugar and then to body
+fat. Increased blood sugar levels from processing
+excessive amounts of protein could fuel cancer cell growth. Eating too much protein with your meals could also result in a nutritional imbalance; you will need to take steps to avoid nutrient deficiencies (like eating more high-fiber complex carbohydrates in whole grains, fruits, and vegetables). On the lighter side of bad effects, too much protein might make your breath smell bad. Of course, too little protein in your diet could lead to a sluggish metabolism, weight issues, malnutrition, low energy levels and fatigue, bone and joint pain, muscle wasting or soreness and low immunity (susceptibility to infections and disease). So, balance is the key.<br><br>
+                    
+                    <b>DAILY PROTEIN INTAKE</b><br><br>
+                    
+                    The amount of protein required varies by person
+and depends on overall calorie needs for your age,
+sex and activity level. The daily recommended intake
+of protein for healthy adults is 10% to 35% of total
+daily calories from protein sources.<br><br>
+                    
+<b>In general, FDA recommendation is for 50 grams
+of protein per day for both men and women.
+Consult with your primary care physician or
+nutritionist for the number that is right for your protein needs.</b><br><br>
+                    
+In winter, it may be tempting to overindulge during
+the holidays or warm yourself up with one too
+many cups of hot cocoa instead of tea, but keep in
+mind that you should be following the same healthy
+eating guidelines that you normally would any other
+time of the year. Make sure to include lean protein,
+whole grains, vegetables and fruits when planning
+                  </p>
+                </ul>
+           
+              </div>
+              <br />
+
+                  <h2><center>Calender of Events</center></h2>
+              <br>
+
+              <div class="well">
+
+                <center><img src="../app_themes/blankcanvas/maineenews/images/calender%20winter.png" class="img-responsive" style=max-height:400px;></center>
+
+                 
+          
+
+            
+              </div>
+                 
+                 
+              
+                 
+                 
+                 
+                 
+                 
+                 
+                
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+                
+                    <script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3,h4,h5"
+            }).data("toc-tocify");
+
+            prettyPrint();
+            $(".optionName").popover({ trigger: "hover" });
+
+        });
+    </script>
+
+
+        
+
+    </body>
+</html>
